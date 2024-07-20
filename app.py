@@ -10,7 +10,7 @@ def generate_summary(user_input):
     response = co.generate(
         model='command-xlarge-nightly',  # You can choose the appropriate model for summarization
         prompt=prompt,
-        max_tokens=150,
+        max_tokens=400,
         temperature=0.5,
         stop_sequences=["."]
     )
